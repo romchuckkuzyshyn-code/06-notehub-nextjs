@@ -53,6 +53,6 @@ export const fetchNoteById = async (id: Note['id']) => {
       Authorization: `Bearer ${process.env.NEXT_PUBLIC_NOTEHUB_TOKEN}`,
     },
   };
-  const res = await axios.get<Note>(`${url} + ${id}`, options);
+  const res = await axios.get<Note>(`${url}/${id}`, options);
   return res.data;
 };
