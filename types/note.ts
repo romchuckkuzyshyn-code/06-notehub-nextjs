@@ -4,7 +4,7 @@ export interface Note {
   content: string;
   createdAt: string;
   updatedAt: string;
-  tag: tags;
+  tag: Tag;
 }
 
-export type tags = 'Work' | 'Personal' | 'Meeting' | 'Shopping' | 'Todo';
+export type Tag = 'Work' | 'Personal' | 'Meeting' | 'Shopping' | 'Todo';
